@@ -1,0 +1,12 @@
+body {
+    background-image: url("background.jpg");
+    background-size: 100% ;
+    background-repeat: no-repeat;
+}
+#carouselOne {
+    max-width: 800px;
+    margin: auto;
+}
+.carousel-item img {
+    height: 400px;
+}
