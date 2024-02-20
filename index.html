@@ -2,59 +2,114 @@
 <html land="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, ititial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>DerpBloggins</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <link href="styles.css" rel="stylesheet">
     </head>
     <body>
+                                                              <!--    NAVBAR   -->
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+            <div class="container-xxl">
+                <a href="#main-top" class="navbar-brand">
+                    <span class="fw-bold">
+                        DerpBloggins
+                    </span>
+                </a>
+                                                        <!--toggle button for mobile nav-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                aria-controls="main-nav" aria-expanded="false" aria-label="toggle navigation"> <!--aria-controls are primarily for screen readers-->
+                <span class="navbar-toggler-icon">
+
+                </span>
+                </button>
+                                                            <!--navbar links-->
+                <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#posts">My posts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#achievements">Achievements</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#toDoList">To do list</a>
+                        </li>
+                    </ul>
+                </div>             <!--things to add 1- achievements section, 2-ToDo list, 3-progjects -->
+            </div>
+        </nav>
+                                                           <!--     Main body / title-->
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="text-center">
-                        <h1 class="text-primary bg-primary-subtle border border-primary-subtle rounded-3 m-2 p-1">DerpBloggins</h1>
-                        <h3 class="text-primary bg-primary-subtle border border-primary-subtle rounded-3 m-2 p-3">A blog adventure detailing the coding trials and tribulations of Ilya Jouk (me)</h3>
+                        <h1 class="text-primary bg-primary-subtle border border-primary-subtle rounded-3 m-2 p-1" id="main-top">DerpBloggins</h1>
                     </div>
                 </div>
             </div>
-         </div>
             <div class="row">
-                <div>
-                    
+                <div class="col-12 col-md-6">
+                    <img src="./public/Ilya_profile_pic.jpg" class="img-fluid w-50 border rounded-3 m-2 float-md-end" alt="image">
                 </div>
-            </div>
+                <div class="col-12 col-md-6">                              <!--subtitle-->
+                    <h3 class="text-primary bg-primary-subtle border border-primary-subtle rounded-3 m-2 p-3">A blog adventure detailing the coding trials and tribulations of Ilya Jouk (me)</h3>
+                    <a href="https://www.linkedin.com/in/ilya-jouk-8801724b/" class="text-primary bg-primary-subtle border border-primary-subtle rounded">Visit my LinkedIn!</a>
+                </div>
+            </div>        
+            <div class="row justify-content-center">                                      <!--carousel-->
+                <div class="col-12 col-md-10">
+                    <div  aria-hidden="true">
+                        <div id="carouselOne" class="carousel slide border border-secondary-subtle" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselOne" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselOne" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselOne" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./public/firstblog.PNG" class="d-block w-100 img-fluid" alt="img of first ever blog attempt">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./public/secondblog.png" class="d-block w-100 img-fluid" alt="image of second attempt at blog">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./public/thirdblog.png" class="d-block w-100 img-fluid" alt="image of third blog attempt">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselOne" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselOne" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>    
         </div>
-        <div id="carouselOne" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselOne" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselOne" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselOne" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="firstblog.PNG" class="d-block w-100" alt="img of first ever blog attempt">
-                </div>
-                <div class="carousel-item">
-                    <img src="secondblog.png" class="d-block w-100" alt="image of second attempt at blog">
-                </div>
-                <div class="carousel-item">
-                    <img src="thirdblog.png" class="d-block w-100" alt="image of third blog attempt">
+                                                   <!--my new post button-->
+        
+        <section id="posts">                          <!--paragraphs/posts-->
+            <div class="row justify-content-center">
+                <div class="col-10">
+                    <div class="text-center">
+                        <p class="text-dark bg-secondary border border-primary-subtle rounded-3 m-2 p-1"><span class="badge bg-primary">Posted on Feb.10.2024</span>So!!!!!! on today's episode of derp, I spend the first few hours continueing the course material on Coursera. Then I spent hours and hours rebuilding a blog type page, or at least the beginnings of one using bootstrap. This has been a journey! Today is feb.10.2024 I started the online course on the fourth. The course itself has touched on bootstrap very lightly so far and this includes things like creating the div container, setting up rows, defining the number of columns you want the content to take up (of 12), setting breakpoints in the divs, dealing with images and setting their class attributes to fluid etc. Up to this point I have only made webpages with straight html and css, never a library so this has been like starting over essentially. Although I can certainly see the benefits of using bootstrap already when you know what you want and how to get their the prototyping must be nutty! So today I started this project your looking at now and learned some valueble things. For example, how to use the bootstrap docs LOL that seems like its going to be my home for the next little while! I messed around with making some cards and seeing how that looked for the top of the page but I really didnt like it so I just added some title and subtitle rows as placeholders for more interesting things to come. I had a picture of myself on one of the cards but it seemed a little austentatious, maybe in the future I will find a better way to do this. A big win! I thought it would be cool to display a carousel that shows my previous attempts at blogs and with the guided assistance of the bootstrap documentation we made it! I added some css rules for additional control of the carousel element because I didnt want it taking up the whole width of the page, then I was having issues with the reference images being slightly different size and even that was figured out! The coursera classes are going very well and I think are a fantastic learning tool. I ripped through the introduction to frontend developement course package in 4 days and now I am deep into part 2 of 9 which is javascript. Re learning how to make else/if statements or switches if you prefer and make nested loops and even objects at this point. I feel like im missing some key ingrediants to better understand how the files and libraries should be packed before setting your webpage loose on the world. Oh well thats why I'm here! </p>
+                    </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselOne" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselOne" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">next</span>
-            </button>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <p class="text-primary bg-primary-subtle border border-primary-subtle rounded-3 m-2 p-1">So!!!!!! on today's episode of derp, I spend the first few hours continueing the course material on Coursera. Then I spent hours and hours rebuilding a blog type page, or at least the beginnings of one using bootstrap. This has been a journey! Today is feb.10.2024 I started the online course on the fourth. The course itself has touch on bootstrap very lightly so far and this includes things like creating the div container, setting up rows, defining the number of columns you want the content to take up (of 12), setting breakpoints in the divs, dealing with images and setting their class attributes to fluid etc. Up to this point I have only made webpages with straight html and css, never a library so this has been like starting over essentially. Although I can certainly see the benefits of using bootstrap already when you know what you want and how to get their the prototyping must be nutty! So today I started this project your looking at now and learned some valueble things. For example, how to use the bootstrap docs LOL that seems like its going to be my home for the next little while! I messed around with making some cards and seeing how that looked for the top of the page but I really didnt like it so I just added some title and subtitle rows as placeholders for more interesting things to come. I had a picture of myself on one of the cards but it seemed a little austentatious, maybe in the future I will find a better way to do this. A big win! I thought it would be cool to display a carousel that shows my previous attempts at blogs and with the guided assistance of the bootstrap documentation we made it! I added some css rules for additional control of the carousel element because I didnt want it taking up the whole width of the page, then I was having issues with the reference images being slightly different size and even that was figured out! The coursera classes are going very well and I think are a fantastic learning tool. I ripped through the introduction to frontend developement course package in 4 days and now I am deep into part 2 of 9 which is javascript. Re learning how to make else/if statements or switches if you prefer and make nested loops and even objects at this point. I feel like im missing some key ingrediants to better understand how the files and libraries should be packed before setting your webpage loose on the world. Oh well thats why I'm here! </p>
+            <div class="row justify-content-center">
+                <div class="col-10">
+                    <div class="text-center">
+                        <p class="text-dark bg-secondary border border-primary-subtle rounded-3 m-2 p-1"><span class="badge bg-primary">Posted on Feb.18.2024</span>Another exciting episode of derp! So I have completed the Javascript module on Coursera and it was so good! I have previously worked with basic loops and functions, even objects but this was a real eye opening experience to just how deep the rabbit hole goes. I am sure I don't have any real idea but I have fallen off the edge of the confidence graph and now comes the not so sexy part of digging myself out. In the JS module it covered classes and inheritance models as well as DOM operators, testing code using throw/catch methods as well as Jest for testing code modules. I am not going to lie it is overwhelming. I hope that over time these concepts sink in  with more use and application. I feel like there is this strange point in my mind that I feel so confident going through the course and doing the material and when applying it to my own work...its like starting over. I think, for me at least, the real key is going to be directly applying these concepts myself as that seems to be where the veil really is. I am in a strange place right now. I am so intimidated by all this and yet I can see the infinite possibilies of these tools and concepts and it makes me so damn excited. I have been trying so hard at this but I have to find a way to do better/more. This week at my job I worked just over 40 hours and on programming I have worked just over 30. If I can find a way to do 40-40 then at least I can say I am working full time at this as well. Time is not the only factor here I have been using MS notepad for note taking and saving code snippets and it has quickly become unmanagable and messy. I am going to find something better to use, that I can keep notes in MUCH more structured way. On a positive note! I have made some minor strides towards understanding how package managment works for websites, and thanks to some guidance from my friend I know that not the entire library I am using has to be uploaded to say my github in this case. I created a .gitignore file and in the future will upload only files/folders required in the package.json. I have made progress on this blog in both the forward and backward directions! I have implemented a navbar with some links to future content I am going to implement. My carousel is kind of broken at the moment I made some changes to how it is handled by bootstrap classes instead of forcing it with css now it sticks the left side of the screen inexplicably. I have added date stamps to these posts, inserted that gaudy photo of myself for reasons unknown to even me. I guess it is my blog there's my face enjoy! Added a linkedIn link that just floats under my subtitle I will either add it into another element or perhaps change it into a links section or something that is not what is it now! So many changes to be made. I think since tomorrow is holiday and I have it off work I will spend significant time on this layout and get it looking not so ROUGH so instead of pushing this branch today(sunday) like I normaly would I am just writing this cathardic post today and going to push the changes tomorrow after some adjustments. I originally had this idea of having a button to press to make these posts instead of typing it out in html (now bootstrap) and I think I have a good idea of how to go about that now with some things I learned in the course using DOM manipulation and classes and inheritance. I am going to try and implement that now I just forsee an issue, If a make a button right on the page that allows me to insert a new post in this current style what stops visitors to the page clicking the button and spamming things of their own? they wont have permission to push the code into the DOM somehow I hope. Either way im going to structure it now, run some Jest testing on it and troubleshoot later WHAT COULD GO WRONG</p>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
+        <img src="./public/figmatest8.png" class="img-fluid w-400 h-400">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
     </body>
 </html>
