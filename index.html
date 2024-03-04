@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
         <title>DerpBloggins</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,93 +17,218 @@
         
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <link href="styles.css" rel="stylesheet">
-    </head>
-    <body>
-                                                              <!--    NAVBAR   -->
-        <nav class="navbar navbar-expand-md navbar-dark bg-primary">
-            <div class="container-xxl">
-                <a href="#main-top" class="navbar-brand">
-                    <span class="fw-bold">
-                        DerpBloggins
-                    </span>
-                </a>
-                                                        <!--toggle button for mobile nav-->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
-                aria-controls="main-nav" aria-expanded="false" aria-label="toggle navigation"> <!--aria-controls are primarily for screen readers-->
-                <span class="navbar-toggler-icon">
+</head>
+<body>
+    <div class="container">       <!--My main page container-->                                                  
+        <div class="row g-0">
+            <div class="col-2 back_splash d-flex mt-3 justify-content-center align-items-center" id="title_box">
+                <h5 class="m-0">DerpBloggins</h5>
+            </div>
+            <div class="col-10">
+                <nav class="navbar navbar-expand-md navbar-dark d-flex back_splash mt-3 px-2" id="top_nav">
+                    <a href="#main_top" class="navbar-brand" id="main_top"> <!--the main-top needs to be set so the go-to section links here-->
+                        
+                    </a>
+                                                            <!--toggle button for mobile nav-->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                    aria-controls="main-nav" aria-expanded="false" aria-label="toggle navigation"> <!--aria-controls are primarily for screen readers-->
+                    <span class="navbar-toggler-icon">
 
-                </span>
-                </button>
-                                                            <!--navbar links-->
-                <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#posts">My posts</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#achievements">Achievements</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#toDoList">To do list</a>
-                        </li>
-                    </ul>
-                </div>             <!--things to add 1- achievements section, 2-ToDo list, 3-progjects -->
+                    </span>
+                    </button>
+                                                                <!--navbar links-->
+                    <div class="collapse navbar-collapse justify-content-end" id="main-nav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <button class="nav-link btn" href="#posts">Posts</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link btn" href="#achievements" id="too_big_text">Achievements</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link btn" href="#toDoList">To do list</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link btn" href="#signUp">Sign up</button>
+                            </li>
+                        </ul>
+                    </div>             
+               </nav>
             </div>
-        </nav>
-                                                           <!--     Main body / title-->
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="text-center">
-                        <h1 class="text-primary bg-primary-subtle border border-primary-subtle rounded-3 m-2 p-1" id="main-top">DerpBloggins</h1>
+        </div>  <!--end of first nav row-->                                                 <!--     Main body / title-->
+        <div class="row mt-3" style="height: 250px;"> <!--start of second row with 2 elements nested header element-->
+            <div class="col-2" style="height: 100%;">
+                <div class="rounded-2 back_splash side_list" style="height: 100%; overflow: hidden;">
+                    <div class="row">
+                        <div class="col sub_title_strap d-flex justify-content-center align-items-center px-2" style="height: 50px;">
+                            <h5 id="achievements" class="mt-2">Achievements</h5>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-md-6">
-                    <img src="./public/Ilya_profile_pic.jpg" class="img-fluid w-50 border rounded-3 m-2 float-md-end" alt="image">
-                </div>
-                <div class="col-12 col-md-6">                              <!--subtitle-->
-                    <h3 class="text-primary bg-primary-subtle border border-primary-subtle rounded-3 m-2 p-3">A blog adventure detailing the coding trials and tribulations of Ilya Jouk (me)</h3>
-                    <a href="https://www.linkedin.com/in/ilya-jouk-8801724b/" class="text-primary bg-primary-subtle border border-primary-subtle rounded">Visit my LinkedIn!</a>
-                </div>
-            </div>        
-            <div class="row justify-content-center">                                      <!--carousel-->
-                <div class="col-12 col-md-10">
-                    <div  aria-hidden="true">
-                        <div id="carouselOne" class="carousel slide border border-secondary-subtle" data-bs-ride="carousel">
-                            <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#carouselOne" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carouselOne" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselOne" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                            </div>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="./public/firstblog.PNG" class="d-block w-100 img-fluid" alt="img of first ever blog attempt">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./public/secondblog.png" class="d-block w-100 img-fluid" alt="image of second attempt at blog">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./public/thirdblog.png" class="d-block w-100 img-fluid" alt="image of third blog attempt">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselOne" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselOne" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">next</span>
-                            </button>
+                    <div class="row">
+                        <div class="col mt-2">
+                            <ul>
+                                <li>Figma -> Code DerpBloggins</li>
+                                <li>Consistent updates</li>
+                                <li>Fully automated w/ backend</li>
+                                <li>Meta-Version Control cert.</li>
+                            </ul>    
                         </div>
                     </div>
                 </div>
-            </div>    
-        </div>
-                                                   <!--my new post button-->
-        
-        <section id="posts">                          <!--paragraphs/posts-->
+            </div>
+            <div class="col-10">
+                <div class="back_splash rounded-2" style="height: 100%;">
+                    <div class="row mx-1" style="height: 100%;">
+                        <div class="col-2 justify-content-center d-flex align-items-center">
+                            <img src="./public/Ilya_profile_pic.jpg" alt="profile photo" class=" img-fluid rounded-1" style="width: auto;" id="profile_pic">
+                        </div>
+                        <div class="col justify-content-center d-flex align-items-center">
+                            <div class="rounded-1 blurb p-2">
+                                <p>This is a personal blog page for me so I can experiment with things I am learning along the way! Also this should serve well as tool to track my progress <em>This is a work in progress</em> and I push updates every sunday, and sometimes I brick things you have been <b>warned!</b> </p>
+                            </div>
+                        </div>
+                        <div class="col-4 justify-content-center d-flex align-items-center">
+                            <div class="carousel_one">
+                                <div  aria-hidden="true">
+                                    <div id="carouselOne" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#carouselOne" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carouselOne" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#carouselOne" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="./public/firstblog.PNG" class="d-block w-100 img-fluid" alt="img of first ever blog attempt" style="height: auto; width: auto;">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./public/secondblog.png" class="d-block w-100 img-fluid" alt="image of second attempt at blog" style="height: auto; width: auto;">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./public/thirdblog.png" class="d-block w-100 img-fluid" alt="image of third blog attempt" style="height: auto; width: auto;">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselOne" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselOne" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+                                                                        <!--end of the header row-->
+        <div class="row mt-3" style="height: 350px;">               <!--start of the main/second row-->
+            <div class="col-2" style="height: 100%;">
+                <div class="rounded-2 back_splash side_list" style="height: 100%; overflow: hidden;">
+                    <div class="row">
+                        <div class="col sub_title_strap d-flex justify-content-center align-items-center px-2" style="height: 50px;">
+                            <h5 id="toDoList" class="text-center mt-2">To do list</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col justify-content-start mt-2">
+                            <ol>
+                                <li>Destroy coursera content</li>
+                                <li>Finish blog remodel</li>
+                                <li>Polish blog</li>
+                                <li>create a way to save content for this page</li>
+                                <li>Automate everything</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-10"> <!--button/links bar-->
+                <nav class="navbar navbar-expand-md navbar-dark back_splash rounded-2 d-flex px-2" id="second_nav" style="height: 40px;">
+                    <a href="#projects_links" class="navbar-brand justify-content-start">
+                        <span class="fw-bold">
+                            Projects and links
+                        </span>
+                    </a>
+                                                            <!--toggle button for mobile nav-->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#second-nav"
+                     aria-controls="second-nav" aria-expanded="false" aria-label="toggle navigation"> <!--aria-controls are primarily for screen readers-->
+                    <span class="navbar-toggler-icon"></span>
+
+                   </button>
+                                                                <!--navbar links-->
+                    <div class="collapse navbar-collapse d-flex justify-content-end text-center align-items-center" id="second-nav">
+                        <ul class="navbar-nav">
+                            <li>
+                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal_for_posting" id="make_post">Post</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link btn" href="#https://github.com/?ef_id=_k_Cj0KCQiAqsitBhDlARIsAGMR1RhAOW23-oAg6NC4b1mWKCgUq4QEDO6EIm6hY3YPv6UZY17cjft6tN0aAuytEALw_wcB_k_&OCID=AIDcmmli8vlwie_SEM__k_Cj0KCQiAqsitBhDlARIsAGMR1RhAOW23-oAg6NC4b1mWKCgUq4QEDO6EIm6hY3YPv6UZY17cjft6tN0aAuytEALw_wcB_k_&gad_source=1&gclid=Cj0KCQiAqsitBhDlARIsAGMR1RhAOW23-oAg6NC4b1mWKCgUq4QEDO6EIm6hY3YPv6UZY17cjft6tN0aAuytEALw_wcB">Github</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link btn" href="#https://www.linkedin.com/in/ilya-jouk-8801724b/">LinkedIn</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link btn" href="#mTableProj">mTableProj</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link btn" href="#Notes">Notes</button>
+                            </li>
+                        </ul>
+                    </div>             
+                </nav><!--card elements hereafter-->
+            <content name="blog posts">
+                <div class="row row-cols-3" id="my_card_posts">                                  <!--first card element-->
+            </content> 
+            <div class="modal" tabindex="-1" id="modal_for_viewing"><!--modal for viewing-->
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Modal title</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Modal body text goes here.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>              <!--modal for POSTING-->
+                <div class="modal fade" id="modal_for_posting" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="modal_title">New Post</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <form id="postForm">
+                            <div class="mb-3">
+                              <label for="postTitle" class="form-label">Title</label>
+                              <input type="text" class="form-control" id="postTitle">
+                            </div>
+                            <div class="mb-3">
+                              <label for="postContent" class="form-label">Content</label>
+                              <textarea class="form-control" id="postContent" rows="3"></textarea>
+                            </div>
+                          </form>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary" id="savePost">Save Post</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>                                           <!--end of main content row-->
+    </div> <!--end of contrainer-->                                           
+        <!--
+        <section id="posts">                          
             <div class="row justify-content-center">
                 <div class="col-10">
                     <div class="text-center">
@@ -118,9 +243,9 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <img src="./public/figmatest8.png" class="img-fluid w-400 h-400">
+        </section>    
+    -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="scripts.js"></script>
-    </body>
+</body>
 </html>
