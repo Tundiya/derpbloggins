@@ -1,8 +1,128 @@
 body {
-    background-color: rgb(35, 40, 44);
+    background: radial-gradient(closest-side, #8C805F, #22282c, #1f2020);
+    background-attachment: fixed;
+    color: #E4EFE7;
 }
-.carousel-item img {
-    height: 400px;
-    width: auto;
-    margin: auto;
+.card {
+    color: #E4EFE7;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 1rem;
+    overflow: hidden; 
+    text-overflow: ellipsis;
 }
+.card-body {
+    padding: 0;
+}
+.card-content-css {
+    text-align: center;
+    padding: 0 22px 0 22px;
+}
+.card-footer {
+    color: #d2c6da;
+    display: flex;
+    justify-content: end;
+}
+ul {
+    line-height: 1.6;
+}
+ol {
+    line-height: 1.7;
+}
+#carouselOne {
+    border-style: solid;
+    border-width: thin;
+    border-color:#3F2909
+}
+#profile_pic {
+    border-style: solid;
+    border-width: thin;
+    border-color:#3F2909
+}
+.back_splash {
+    background-color: #79745F;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #3F2909;
+}
+.blurb {
+    border-style: solid;
+    border-width: thin;
+    border-color: #3F2909;
+}
+
+.btn {
+    color: #E4EFE7;
+    background-color:#2B4649;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #3F2909;
+    height: 32px;
+    width: 100px;
+    margin-left: 10px;
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    .btn{
+        margin-left: 0;
+    }
+}
+
+#top_nav {
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+}
+#title_box {
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    background-color: #2B4649;
+    border-right-width: 0px;
+    padding: 0;
+}
+#too_big_text {
+    font-size: 15px;
+    padding-left: 2px;
+}
+.sub_title_strap {
+    background-color: #2B4649;
+    width: 100%;
+    margin-top: 0px;
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+    border-style: solid;
+    border-color:#3F2909;
+    border-top-width: 0px;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 1px;
+}
+.side_list {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+}
+.card_straps {
+    background-color: #4E4A3A;
+    width: 100%;
+    height: 60px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+    border-style: solid;
+    border-color:#3F2909;
+    border-top-width: 0px;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-content {
+    background-color: #2B4649;
+}
+
