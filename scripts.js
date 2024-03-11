@@ -51,18 +51,14 @@ const newCardPost = {
 */
 
 class CardPost {
-    static postIdCounter = 0;
-    constructor(title, content, date){
+    constructor(title, content){
         this.title = title;
-        this.content = content;
-        this.date = date;
-        this.postId = ++CardPost.postIdCounter;
+        this.content = content;   
     }
     //there I am going to generate html for the card 
     generateCardHTML(){
         const cardContainer = document.createElement('div');
         cardContainer.classList.add("col");
-        cardContainer.setAttribute('data-post-id', this.postId);
         
         const cardBody = document.createElement('div');
         cardBody.classList.add('card');
@@ -91,7 +87,7 @@ class CardPost {
 
         const cardText = document.createElement('p');
         cardText.classList.add('card-text');
-        cardText.textContent = this.content.substring(0, 206) + '...';
+        cardText.textContent = this.content.substring(0, 195) + '...';
         
 
         const cardDate = document.createElement('div');
@@ -132,10 +128,8 @@ class CardPost {
     }
     saveToFile(){        //create object to represent the new card/post
          const newCardPost = {
-            postId: this.postId,
             title: this.title,
-            content: this.content,
-            date: this.date
+            content: this.content
         };
 
     fetch('http://127.0.0.1:3000/', {
@@ -192,7 +186,7 @@ function generatePostHTML(postId, title, content, date) {
 
     const cardText = document.createElement('p');
     cardText.classList.add('card-text');
-    cardText.textContent = content.substring(0, 206) + '...';
+    cardText.textContent = content.substring(0, 195) + '...';
 
     const cardDate = document.createElement('div');
     cardDate.classList.add('card-footer');
@@ -227,7 +221,7 @@ function generatePostHTML(postId, title, content, date) {
             const selectedPost = posts.find(post => post.postId === parseInt(postId));
             console.log(selectedPost);
             //pass content into modal
-            openModal(selectedPost.title, selectedPost.content);
+            openModal(selectedPost.title, selectedPost.content, selectedPost.createdAt);
         } catch (error) {
             console.error('Error fetching full post content', error);
         }

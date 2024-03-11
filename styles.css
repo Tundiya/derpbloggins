@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'neuropol';
+    src: url('./public/neuropol.otf') format('opentype');
+}
+
 body {
     background: radial-gradient(closest-side, #8C805F, #22282c, #1f2020);
     background-attachment: fixed;
@@ -13,6 +18,9 @@ body {
 }
 .card-body {
     padding: 0;
+}
+.card:hover {
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.397);
 }
 .card-content-css {
     text-align: center;
@@ -32,8 +40,9 @@ ol {
 #carouselOne {
     border-style: solid;
     border-width: thin;
-    border-color:#3F2909
+    border-color:#3F2909;
 }
+
 #profile_pic {
     border-style: solid;
     border-width: thin;
@@ -63,15 +72,30 @@ ol {
     padding: 0;
 }
 
+.btn:hover {
+    background-color: #182628;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #6f5631;
+}
+
 @media (max-width: 768px) {
     .btn{
         margin-left: 0;
     }
 }
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover, a:visited {
+    text-decoration: none;
+}
 
 #top_nav {
     border-bottom-right-radius: 8px;
     border-top-right-radius: 8px;
+    margin-left: -20px;
 }
 #title_box {
     border-top-left-radius: 0.5rem;
@@ -79,6 +103,14 @@ ol {
     background-color: #2B4649;
     border-right-width: 0px;
     padding: 0;
+    border-style: solid;
+    border-width: 2px;
+    border-right-width: 0px;
+    border-color: #3F2909;
+}
+#title_box_wrapper {
+    margin-left: -20px;
+    font-family: 'neuropol';
 }
 #too_big_text {
     font-size: 15px;
@@ -126,3 +158,10 @@ ol {
     background-color: #2B4649;
 }
 
+
+#animator {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    z-index: 1;
+}
