@@ -20,40 +20,16 @@
 </head>
 <body>
     <div class="container">       <!--My main page container-->                                                  
-        <div class="row g-0">
-            <div class="col-2 back_splash d-flex mt-3 justify-content-center align-items-center" id="title_box">
-                <h5 class="m-0">DerpBloggins</h5>
+        <div class="row g-0" id="top_row">
+            <div class="col-2 d-flex mt-3 justify-content-center align-items-center" id="title_box">
+                <h5 id="title_box_wrapper">DerpBloggins</h5>
             </div>
             <div class="col-10">
-                <nav class="navbar navbar-expand-md navbar-dark d-flex back_splash mt-3 px-2" id="top_nav">
-                    <a href="#main_top" class="navbar-brand" id="main_top"> <!--the main-top needs to be set so the go-to section links here-->
-                        
-                    </a>
-                                                            <!--toggle button for mobile nav-->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
-                    aria-controls="main-nav" aria-expanded="false" aria-label="toggle navigation"> <!--aria-controls are primarily for screen readers-->
-                    <span class="navbar-toggler-icon">
+                <div class="back_splash mt-3 p-0" style="height: 60px;" id="top_nav">
+                    <canvas id="animator">
 
-                    </span>
-                    </button>
-                                                                <!--navbar links-->
-                    <div class="collapse navbar-collapse justify-content-end" id="main-nav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <button class="nav-link btn" href="#posts">Posts</button>
-                            </li>
-                            <li class="nav-item">
-                                <button class="nav-link btn" href="#achievements" id="too_big_text">Achievements</button>
-                            </li>
-                            <li class="nav-item">
-                                <button class="nav-link btn" href="#toDoList">To do list</button>
-                            </li>
-                            <li class="nav-item">
-                                <button class="nav-link btn" href="#signUp">Sign up</button>
-                            </li>
-                        </ul>
-                    </div>             
-               </nav>
+                    </canvas>
+                </div>
             </div>
         </div>  <!--end of first nav row-->                                                 <!--     Main body / title-->
         <div class="row mt-3" style="height: 250px;"> <!--start of second row with 2 elements nested header element-->
@@ -70,7 +46,7 @@
                                 <li>Figma -> Code DerpBloggins</li>
                                 <li>Consistent updates</li>
                                 <li>Fully automated w/ backend</li>
-                                <li>Meta-Version Control cert.</li>
+                                <li>In-depth HTML/CSS cert.</li>
                             </ul>    
                         </div>
                     </div>
@@ -98,13 +74,13 @@
                                         </div>
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
-                                                <img src="./public/firstblog.PNG" class="d-block w-100 img-fluid" alt="img of first ever blog attempt" style="height: auto; width: auto;">
+                                                <img src="./public/firstblog.PNG" class="d-block w-100 img-fluid" alt="img of first ever blog attempt">
                                             </div>
                                             <div class="carousel-item">
-                                                <img src="./public/secondblog.png" class="d-block w-100 img-fluid" alt="image of second attempt at blog" style="height: auto; width: auto;">
+                                                <img src="./public/secondblog.png" class="d-block w-100 img-fluid" alt="image of second attempt at blog">
                                             </div>
                                             <div class="carousel-item">
-                                                <img src="./public/thirdblog.png" class="d-block w-100 img-fluid" alt="image of third blog attempt" style="height: auto; width: auto;">
+                                                <img src="./public/thirdblog.png" class="d-block w-100 img-fluid" alt="image of third blog attempt">
                                             </div>
                                         </div>
                                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselOne" data-bs-slide="prev">
@@ -165,16 +141,20 @@
                                 <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal_for_posting" id="make_post">Post</button>
                             </li>
                             <li class="nav-item">
-                                <button class="nav-link btn" href="#https://github.com/?ef_id=_k_Cj0KCQiAqsitBhDlARIsAGMR1RhAOW23-oAg6NC4b1mWKCgUq4QEDO6EIm6hY3YPv6UZY17cjft6tN0aAuytEALw_wcB_k_&OCID=AIDcmmli8vlwie_SEM__k_Cj0KCQiAqsitBhDlARIsAGMR1RhAOW23-oAg6NC4b1mWKCgUq4QEDO6EIm6hY3YPv6UZY17cjft6tN0aAuytEALw_wcB_k_&gad_source=1&gclid=Cj0KCQiAqsitBhDlARIsAGMR1RhAOW23-oAg6NC4b1mWKCgUq4QEDO6EIm6hY3YPv6UZY17cjft6tN0aAuytEALw_wcB">Github</button>
+                                <a href="https://github.com/Tundiya" target="_blank">
+                                <button class="nav-link btn">Github</button>
+                                </a>
                             </li>
                             <li class="nav-item">
-                                <button class="nav-link btn" href="#https://www.linkedin.com/in/ilya-jouk-8801724b/">LinkedIn</button>
+                                <a href="https://www.linkedin.com/in/ilya-jouk-8801724b/" target="_blank">
+                                <button class="nav-link btn">LinkedIn</button>
+                                </a>
                             </li>
                             <li class="nav-item">
                                 <button class="nav-link btn" href="#mTableProj">mTableProj</button>
                             </li>
                             <li class="nav-item">
-                                <button class="nav-link btn" href="#Notes">Notes</button>
+                                <button class="nav-link btn" href="#signup">Sign up</button>
                             </li>
                         </ul>
                     </div>             
@@ -245,6 +225,7 @@
             </div>
         </section>    
     -->
+    <script src="animations.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="scripts.js"></script>
 </body>
