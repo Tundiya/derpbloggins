@@ -53,6 +53,8 @@ ol {
     border-style: solid;
     border-width: 2px;
     border-color: #3F2909;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .blurb {
     border-style: solid;
@@ -95,23 +97,29 @@ a:hover, a:visited {
 #top_nav {
     border-bottom-right-radius: 8px;
     border-top-right-radius: 8px;
-    margin-left: -20px;
 }
 #title_box {
     border-top-left-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
     background-color: #2B4649;
     border-right-width: 0px;
-    padding: 0;
+    padding:  0 1% 0 3%;
     border-style: solid;
     border-width: 2px;
     border-right-width: 0px;
     border-color: #3F2909;
 }
 #title_box_wrapper {
-    margin-left: -20px;
     font-family: 'neuropol';
+    margin-left: -20px;
 }
+@media (max-width: 1200px) {
+    #title_box_wrapper {
+        font-size: 100%;
+    }
+}
+
+
 #too_big_text {
     font-size: 15px;
     padding-left: 2px;
@@ -164,4 +172,33 @@ a:hover, a:visited {
     width: 100%;
     padding: 0;
     z-index: 1;
+}
+.card-body {
+    height: 260px;
+}
+@media (min-width: 768px) {
+    .mainrow {
+        height: 250px;
+    }
+}
+@media (min-width: 768px) {
+    .mainerrow {
+        height: 350px;
+    }
+}
+@media (max-width: 768px) {
+    .screenmargin {
+        margin-top: 16px;
+    }
+}
+@media (max-width: 992px) {
+    .filledover {
+        overflow: auto;
+    }
+}
+.mid_strap {
+    background-color: #2B4649;
+    width: 200px;
+    border: solid 2px #3F2909;
+    border-radius: 5px;
 }

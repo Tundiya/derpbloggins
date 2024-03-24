@@ -10,7 +10,7 @@
         <meta property="og:title" content="my blog" />
 	    <meta property="og:type" content="website" />
 	    <meta property="og:url" content="https://tundiya.github.io/derpbloggins/" />
-	    <meta property="og:image" content="./public/figmatest8" />
+	    <meta property="og:image" content="./public/meta_datapng.png" />
         <meta property="og:description" content="A personal blog for my Ilya Jouk detailing my coding trials and tribulations"/>
         <meta property="og:locale" content="en_CAN"/>
         <meta property="og:site_name" content="DerpBloggins"/>
@@ -21,20 +21,54 @@
 <body>
     <div class="container">       <!--My main page container-->                                                  
         <div class="row g-0" id="top_row">
-            <div class="col-2 d-flex mt-3 justify-content-center align-items-center" id="title_box">
+            <div class="col-6 col-sm-4 col-xxl-2 col-md-3  d-flex mt-3 justify-content-center align-items-center" id="title_box">
                 <h5 id="title_box_wrapper">DerpBloggins</h5>
             </div>
-            <div class="col-10">
-                <div class="back_splash mt-3 p-0" style="height: 60px;" id="top_nav">
-                    <canvas id="animator">
-
-                    </canvas>
+            <div class="col-6 col-sm-8 col-xxl-10 col-md-9">
+                <div class="back_splash mt-3 p-0" style="height: 60px;">
+                    <nav class="navbar navbar-expand-lg navbar-dark rounded-2 d-flex px-2" id="second-nav">
+                        <a href="#projects_links" class="navbar-brand justify-content-end">
+                            <span>
+                                Navigate
+                            </span>
+                        </a>
+                                                                <!--toggle button for mobile nav-->
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#second-nav"
+                         aria-controls="second-nav" aria-expanded="false" aria-label="toggle navigation"> <!--aria-controls are primarily for screen readers-->
+                        <span class="navbar-toggler-icon"></span>
+    
+                       </button>
+                                                                    <!--navbar links-->
+                        <div class="collapse navbar-collapse justify-content-end" id="second-nav">
+                            <ul class="navbar-nav">
+                                <li>
+                                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal_for_posting" id="make_post">Post</button>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://github.com/Tundiya" target="_blank">
+                                    <button class="nav-link btn">Github</button>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://www.linkedin.com/in/ilya-jouk-8801724b/" target="_blank">
+                                    <button class="nav-link btn">LinkedIn</button>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="nav-link btn" href="#mTableProj">mTableProj</button>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="nav-link btn" href="#signup">Sign up</button>
+                                </li>
+                            </ul>
+                        </div>             
+                    </nav>
                 </div>
             </div>
         </div>  <!--end of first nav row-->                                                 <!--     Main body / title-->
-        <div class="row mt-3" style="height: 250px;"> <!--start of second row with 2 elements nested header element-->
-            <div class="col-2" style="height: 100%;">
-                <div class="rounded-2 back_splash side_list" style="height: 100%; overflow: hidden;">
+        <div class="row mt-3"> <!--start of second row with 2 elements nested header element-->
+            <div class="col-12 col-xxl-2 col-md-3 order-2 order-md-1 screenmargin">
+                <div class="rounded-2 mainrow back_splash side_list filledover">
                     <div class="row">
                         <div class="col sub_title_strap d-flex justify-content-center align-items-center px-2" style="height: 50px;">
                             <h5 id="achievements" class="mt-2">Achievements</h5>
@@ -46,16 +80,16 @@
                                 <li>Figma -> Code DerpBloggins</li>
                                 <li>Consistent updates</li>
                                 <li>Fully automated w/ backend</li>
-                                <li>In-depth HTML/CSS cert.</li>
+                                <li>React basics cert.</li>
                             </ul>    
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-10">
-                <div class="back_splash rounded-2" style="height: 100%;">
+            <div class="col-12 col-md-9 col-xxl-10 order-1 order-md-2">
+                <div class="back_splash rounded-2 mainrow">
                     <div class="row mx-1" style="height: 100%;">
-                        <div class="col-2 justify-content-center d-flex align-items-center">
+                        <div class="col-sm-4 col-lg-3 col-xl-2 justify-content-center d-flex align-items-center">
                             <img src="./public/Ilya_profile_pic.jpg" alt="profile photo" class=" img-fluid rounded-1" style="width: auto;" id="profile_pic">
                         </div>
                         <div class="col justify-content-center d-flex align-items-center">
@@ -63,7 +97,7 @@
                                 <p>This is a personal blog page for me so I can experiment with things I am learning along the way! Also this should serve well as tool to track my progress <em>This is a work in progress</em> and I push updates every sunday, and sometimes I brick things you have been <b>warned!</b> </p>
                             </div>
                         </div>
-                        <div class="col-4 justify-content-center d-flex align-items-center">
+                        <div class="col-4 d-none d-lg-flex justify-content-center d-flex align-items-center">
                             <div class="carousel_one">
                                 <div  aria-hidden="true">
                                     <div id="carouselOne" class="carousel slide" data-bs-ride="carousel">
@@ -100,9 +134,9 @@
             </div>
         </div>        
                                                                         <!--end of the header row-->
-        <div class="row mt-3" style="height: 350px;">               <!--start of the main/second row-->
-            <div class="col-2" style="height: 100%;">
-                <div class="rounded-2 back_splash side_list" style="height: 100%; overflow: hidden;">
+        <div class="row mt-3">               <!--start of the main/second row-->
+            <div class="col-12 col-md-3 col-xxl-2">
+                <div class="rounded-2 back_splash mainerrow side_list filledover">
                     <div class="row">
                         <div class="col sub_title_strap d-flex justify-content-center align-items-center px-2" style="height: 50px;">
                             <h5 id="toDoList" class="text-center mt-2">To do list</h5>
@@ -121,46 +155,16 @@
                     </div>
                 </div>
             </div>
-            <div class="col-10"> <!--button/links bar-->
-                <nav class="navbar navbar-expand-md navbar-dark back_splash rounded-2 d-flex px-2" id="second_nav" style="height: 40px;">
-                    <a href="#projects_links" class="navbar-brand justify-content-start">
-                        <span class="fw-bold">
-                            Projects and links
-                        </span>
-                    </a>
-                                                            <!--toggle button for mobile nav-->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#second-nav"
-                     aria-controls="second-nav" aria-expanded="false" aria-label="toggle navigation"> <!--aria-controls are primarily for screen readers-->
-                    <span class="navbar-toggler-icon"></span>
-
-                   </button>
-                                                                <!--navbar links-->
-                    <div class="collapse navbar-collapse d-flex justify-content-end text-center align-items-center" id="second-nav">
-                        <ul class="navbar-nav">
-                            <li>
-                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal_for_posting" id="make_post">Post</button>
-                            </li>
-                            <li class="nav-item">
-                                <a href="https://github.com/Tundiya" target="_blank">
-                                <button class="nav-link btn">Github</button>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="https://www.linkedin.com/in/ilya-jouk-8801724b/" target="_blank">
-                                <button class="nav-link btn">LinkedIn</button>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <button class="nav-link btn" href="#mTableProj">mTableProj</button>
-                            </li>
-                            <li class="nav-item">
-                                <button class="nav-link btn" href="#signup">Sign up</button>
-                            </li>
-                        </ul>
-                    </div>             
-                </nav><!--card elements hereafter-->
+            <div class="col-12 col-md-9 col-xxl-10">
+                <div class="back_splash rounded-2 d-flex justify-content-center align-items-center screenmargin" style="height: 40px;">
+                    <div class="mid_strap d-flex justify-content-center align-items-center">
+                        <h4>The posts</h4>
+                    </div>
+                </div>
+            
+                <!--card elements hereafter-->
             <content name="blog posts">
-                <div class="row row-cols-3" id="my_card_posts">                                  <!--first card element-->
+                <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3" id="my_card_posts">                                  <!--first card element-->
             </content> 
             <div class="modal" tabindex="-1" id="modal_for_viewing"><!--modal for viewing-->
                 <div class="modal-dialog">
