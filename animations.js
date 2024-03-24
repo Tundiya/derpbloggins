@@ -3,6 +3,7 @@
 
 let block;
 const trail = [];
+const word = "Posts";
 
 function init() {
     const canvas = document.getElementById('animator');
@@ -25,10 +26,11 @@ function init() {
 
 function draw (ctx) {
     const canvas = ctx.canvas;
-    const aspectRatio = canvas.width / canvas.height;
+    
     //clear the canvas
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
+  
 
 
     switch (block.edge) {
